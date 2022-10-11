@@ -4,6 +4,14 @@ import { authValidator } from "../middlewares/index.js";
 
 const router = express.Router();
 
-router.post("/products", authValidator, productController.createProduct);
+router
+  .route("/products")
+  .post(authValidator, productController.createProduct)
+  .get(authValidator, productController.getAllProducts);
+
+router
+  .route("/products/:id")
+  .put(authValidator, productController.updateProduct)
+  .delete(authValidator, productController.deleteProduct);
 
 export default router;

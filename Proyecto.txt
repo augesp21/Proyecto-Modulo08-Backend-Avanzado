@@ -66,3 +66,13 @@ DELETE /products/remove quitar producto de carrito
 SALES ROUTES
 POST /sales comprar carrito 
 GET /sales ver historial de compras 
+
+PRESENTACIÓN
+
+Mencionar
+1.- Nombre del proyecto
+2.- Nombre
+3.- Rapido un background de nuestro conocimiento en la programación
+4.- Especificaciones tecnicas del proyecto
+5.- Reto más dificil del modulo 
+6.- Que te gustaría aprender como siguiente paso 

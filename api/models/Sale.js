@@ -4,14 +4,15 @@ const saleSchema = new mongoose.Schema({
   date: {
     type: Date,
     default: Date.now,
+    required: true
   },
-  Product: {
-    type: Number,
-    required: true,
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User"
   },
-  total: {
-    type: Number,
-    required: true,
+  cart: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Cart"
   }
 });
 
